@@ -8,18 +8,6 @@ public class Dog extends Pet{
 	
 
 	//---------------getters + setters----------
-	@Override
-	public double getWeight() {
-		return weight;
-	}
-
-	@Override
-	public void setWeight(double weight) {
-		this.weight=(weight>0.2 && weight<90)?weight:0.2;
-		
-	}	
-	
-	
 	public boolean getIsExtraBarking() {
 		return isExtraBarking;
 	}
@@ -41,6 +29,17 @@ public class Dog extends Pet{
 		return  super.toString()+" ,isExtraBarking: "+getIsExtraBarking();
 	}
 
+	@Override
+	public double getWeight() {
+		return weight;
+	}
+
+	@Override
+	public void setWeight(double weight) {
+		this.weight=(weight>0.2 && weight<90)?weight:0.2;
+		
+	}	
+	
 	@Override
 	public String makeSound() {
 		return "Wufff Wufff";

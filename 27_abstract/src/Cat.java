@@ -6,18 +6,7 @@ public class Cat extends Pet{
 		
 
 		//---------------getters + setters----------
-		@Override
-		public double getWeight() {
-			return weight;
-		}
 
-		@Override
-		public void setWeight(double weight) {
-			this.weight=(weight>0.2 && weight<30)?weight:0.2;
-			
-		}	
-		
-		
 		public int getNumOfHuntedSnakes() {
 			return numOfHuntedSnakes;
 		}
@@ -39,6 +28,17 @@ public class Cat extends Pet{
 			return  super.toString()+" ,numOfHuntedSnakes: "+getNumOfHuntedSnakes();
 		}
 
+		@Override
+		public double getWeight() {
+			return weight;
+		}
+
+		@Override
+		public void setWeight(double weight) {
+			this.weight=(weight>0.2 && weight<30)?weight:0.2;
+			
+		}	
+	
 		@Override
 		public String makeSound() {
 			return "Miawwww Miawwww";

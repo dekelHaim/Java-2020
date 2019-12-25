@@ -6,18 +6,6 @@ public class Bird extends Animal{
 			
 
 			//---------------getters + setters----------
-			@Override
-			public double getWeight() {
-				return weight;
-			}
-
-			@Override
-			public void setWeight(double weight) {
-				this.weight=(weight>0.2 && weight<10)?weight:0.2;
-				
-			}	
-			
-			
 			public boolean getIsFlying() {
 				return isFlying;
 			}
@@ -39,6 +27,17 @@ public class Bird extends Animal{
 				return  super.toString()+" ,isFlying: "+getIsFlying();
 			}
 
+			@Override
+			public double getWeight() {
+				return weight;
+			}
+
+			@Override
+			public void setWeight(double weight) {
+				this.weight=(weight>0.2 && weight<10)?weight:0.2;
+				
+			}	
+			
 			@Override
 			public String makeSound() {
 				return "Ziffff Ziffff";

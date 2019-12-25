@@ -26,7 +26,7 @@ public abstract class Animal {
 	//abstract setter & getter (will force the sub-classes to add a property named weight)
 	public abstract double getWeight();
 	public abstract void setWeight(double weight);
-	
+	public abstract String makeSound();
 	
 	//---------------constructor----------------
 	public Animal(){
@@ -41,5 +41,5 @@ public abstract class Animal {
 	}
 	
 	
-	public abstract String makeSound();
+
 }
